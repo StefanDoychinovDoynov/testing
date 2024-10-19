@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Full page loading screen */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .animation-container {
+    position: relative;
+    overflow: visible; /* Change this line */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .animated-image {
+    position: absolute;
+    bottom: -15vh;
+    width: 7vw;
+    height: 5vwpx;
+    animation: rise 3.5s linear forwards;
+  }
+  
+  
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(100vh) rotate(0deg); /* Start below the viewport */
+    }
+    100% {
+      transform: translateY(-125vh) rotate(360deg); /* Move to the top */
+    }
+  }
+
+  @keyframes bring {
+    0% {
+      transform: translateY(110vh); /* Start below the viewport */
+    }
+    100% {
+      transform: translateY(4vh); /* Move to the top */
+    }
+  }
+
+
+
+
+
+
+
+  
+  /* Landing page styling */
+  .landing-page {
+    display: block;
+    animation: bring 1.2s ease-out;
+
+  }
+  
+  .Header{
+    display: flex;
+    width: 100%;
+    margin-top: 4vh;
+}
+
+
+
+#Logo{
+    width: 2.8vw;
+    height: 2.8vw;
+    margin-left: 2vw;
+    margin-top: 0;
+}
+
+#Title{
+    margin-left: 0.4vw;
+    font-size: 3vh;
+    margin-top: 0.7vh;
+    margin-bottom: 0;
+    font-weight: 600;
+
+}
+
+.Menu{
+    margin-left: auto;
+    margin-right: 2vw;
+}
+
+#WorkButton{
+    text-decoration: none;
+    margin-right: 2vw;
+    color: black;
+}
+
+#ContactButton{
+    text-decoration: none;  
+    color: black;
+}
+
+
+.First {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+}
+
+#Phrase {
+    font-size: 10vh; /* Optional: adjust size */
+    margin-top: 30vh; /* Optional: adds some vertical spacing */
+    text-align: center; /* Just in case there's additional text wrapping */
+
+}
+
+
+  body{
+    margin:0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+  }
+  
